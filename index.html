@@ -23,30 +23,31 @@
 
         .container {
             background: rgba(0, 0, 0, 0.6);
-            padding: 40px;
+            padding: 20px;
             border-radius: 10px;
-            max-width: 600px;
+            max-width: 90%;
             width: 100%;
+            box-sizing: border-box;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 10px;
         }
 
         p.slogan {
             font-size: 1.2em;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         p.description {
             font-size: 1em;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .buttons a {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 10px 20px;
             margin: 10px;
             font-size: 1em;
             color: #fff;
@@ -59,16 +60,35 @@
         .buttons a:hover {
             background: #4682b4;
         }
+
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 3em;
+            }
+
+            .container {
+                padding: 40px;
+            }
+
+            .buttons a {
+                padding: 15px 30px;
+                font-size: 1.1em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Artix SMP</h1>
         <p class="slogan">Powered by Rex Servers</p>
-        <p class="description">Join a friendly Minecraft SMP with an amazing community and lots of fun!</p>
+        <p class="description">
+            Join a friendly Minecraft SMP with an amazing community and lots of fun! <br>
+            Join WA Community to get Minecraft for Free and for comms.
+        </p>
         <div class="buttons">
             <a href="https://chat.whatsapp.com/LCGhWYvgWDq1rMctNHS8Du" target="_blank">Join WA Community</a>
             <a href="minecraft://?addExternalServer=ArtixSMP|130.250.191.59:26648">Play on Bedrock/PE</a>
+            <a href="java.html">Play on Java</a>
         </div>
     </div>
 </body>
